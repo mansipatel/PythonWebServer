@@ -67,7 +67,7 @@ def log_requests(r, c):
 # This function prepends an HTML message in every response which specifies micro seconds taken to generate the response
 def inject_header(start_time):
         return "<html><div class='container alert alert-warning'>This Website is running on a minimilistic multi-threaded python web server I've built. \
-<a>Github code</a>, <a href=""/python-web-server.htm"">blog</a>.<br />Time taken by the server to generate this page:  " + format(((time.time() - start_time)*1000*1000),".2f") + "&micr\
+<a href=""https://github.com/mansipatel/PythonWebServer.git"">Github code</a>, <a href=""/python-web-server.htm"">blog</a>.<br />Time taken by the server to generate this page:  " + format(((time.time() - start_time)*1000*1000),".2f") + "&micr\
 o;s.</div>"
 
 
